@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html xmlns:p="http://primefaces.org/ui" xmlns:f="jakarta.faces.core">
+    <body>
+        <style>
+            button.ui-button 
+            {
+                margin-right: .5rem;
+            }
+        </style>
+        <div>
+            <h5>Info-Message</h5>
+            <p:panel>
+                <p:selectOneRadio id="line" layout="pageDirection">
+                    <f:selectItem itemLabel="Info-Message automatik" itemValue="Option1"/>
+                    <f:selectItem itemLabel="Info-Message manuel" itemValue="Option2"/>
+                </p:selectOneRadio>            
+                <p:commandButton value="Info-Message erzeugen" 
+                                     action="#{pressButtonAction.infoButtonAction()}"
+                                     update=":mainform:message:messages
+                                            ,:mainform:growlmsgs"
+                />            
+            </p:panel>
+            <h5>Debug/Error-Message</h5>
+            <p:panel>
+                <p:commandButton value="Debug-Message erzeugen"  action="#{pressButtonAction.debugButtonAction()}" 
+                                 update=":mainform:message:messages
+                                        ,:mainform:growlmsgs"
+                                /> 
+                <p:commandButton value="Error-Message erzeugen" action="#{pressButtonAction.errorButtonAction()}" 
+                                 update=":mainform:message:messages
+                                        ,:mainform:growlmsgs"
+                                />
+                <p:commandButton value="Warning-Message erzeugen" action="#{pressButtonAction.warningButtonAction()}" 
+                                 update=":mainform:message:messages
+                                        ,:mainform:growlmsgs"
+                                />
+            </p:panel>
+        </div>
+    </body>
+</html>
