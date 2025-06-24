@@ -42,4 +42,4 @@ config.cmd --url https://github.com/alex9dim58/newbusiness-wildfly --token ASR6F
 see https://github.com/alex9dim58/newbusiness-wildfly/settings/actions/runners/new# newbusiness-wildfly
 "# newbusiness-wildfly" 
 
-ERstellen GitHub repo!
+Push in GitHub.

@@ -149,7 +149,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.5.0</version>
-                <goals>war</goals>
+                <!-- goals>war</goals -->
             </plugin>            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

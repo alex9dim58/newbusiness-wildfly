@@ -14,9 +14,9 @@ package de.dansys.playground.docker;
 //@SpringBootApplication
 public class Newbusiness
 {
-    public static void xmain(String[] args) 
+    public static void xmain(String[] args)
     {
 //        SpringApplication.run(Newbusiness.class, args);
-//        System.out.println("Hello from inside the WAR file!");
+        System.out.println("Hello from inside the WAR file!");
     }
 }
