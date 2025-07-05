@@ -25,7 +25,7 @@ jobs:
         run: mvn test
       # Optional: Hier können Sie weitere Schritte wie Codeanalyse (SonarQube), etc. hinzufügen
       - name: Upload Artifacts (optional, z.B. für WAR-Datei)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: application-artifact
           path: target/*.war  # Pfad zur WAR-Datei
